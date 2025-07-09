@@ -29,8 +29,9 @@ const Login = () => {
 
   const handleGoogle = async () => {
     try {
-      await signInWithPopup(auth, GoogleAuthProvider);
-      toast.success("Google Login Success!");
+      const provider = new GoogleAuthProvider();
+      const result = await signInWithPopup(auth, provider);
+      toast.success(`Welcome, ${result.user.displayName || "User"}!`);
       navigate("/");
     } catch (err) {
       toast.error(err.message);
@@ -57,7 +58,7 @@ const Login = () => {
         />
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded"
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded"
         >
           Login
         </button>
@@ -70,7 +71,7 @@ const Login = () => {
       </p>
       <button
         onClick={handleGoogle}
-        className="mt-4 w-full bg-red-500 text-white py-2 rounded"
+        className="mt-4 w-full bg-red-500 hover:bg-red-600 transition text-white py-2 rounded-md font-semibold"
       >
         Login with Google
       </button>

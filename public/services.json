@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "image": "https://source.unsplash.com/400x300/?career",
+    "name": "Career Planning",
+    "category": "Career",
+    "price": "$99",
+    "counselor": "John Doe",
+    "description": "Plan your future with expert guidance."
+  },
+  {
+    "id": "2",
+    "image": "https://source.unsplash.com/400x300/?resume",
+    "name": "Resume Building",
+    "category": "Job Prep",
+    "price": "$49",
+    "counselor": "Jane Smith",
+    "description": "Create an impressive resume easily."
+  },
+  {
+    "id": "3",
+    "image": "https://source.unsplash.com/400x300/?interview",
+    "name": "Interview Coaching",
+    "category": "Job Prep",
+    "price": "$79",
+    "counselor": "Mike Taylor",
+    "description": "Practice mock interviews with feedback."
+  },
+  {
+    "id": "4",
+    "image": "https://source.unsplash.com/400x300/?scholarship",
+    "name": "Scholarship Assistance",
+    "category": "Education",
+    "price": "$59",
+    "counselor": "Sarah Lee",
+    "description": "We’ll find scholarships you qualify for."
+  },
+  {
+    "id": "5",
+    "image": "https://source.unsplash.com/400x300/?job",
+    "name": "Job Placement",
+    "category": "Job",
+    "price": "$129",
+    "counselor": "Emily Clark",
+    "description": "We help you land your dream job."
+  },
+  {
+    "id": "6",
+    "image": "https://source.unsplash.com/400x300/?skills",
+    "name": "Skill Assessment",
+    "category": "Skill",
+    "price": "$39",
+    "counselor": "Brian Hill",
+    "description": "Identify and develop your strengths."
+  }
+]
