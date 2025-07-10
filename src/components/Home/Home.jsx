@@ -14,24 +14,48 @@ const Home = () => {
     <div className="px-4 md:px-10 py-8">
       <div className="carousel w-full rounded-md mb-10 h-64 md:h-96">
         <div id="slide1" className="carousel-item relative w-full">
-          <img src="https://source.unsplash.com/1200x400/?career,1" className="w-full object-cover" alt="Career Slide 1" />
+          <img
+            src="https://i.ibb.co/FLyvVCB3/career-5.jpg"
+            className="w-full object-cover"
+            alt="Career Slide 1"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" className="btn btn-circle">❮</a>
-            <a href="#slide2" className="btn btn-circle">❯</a>
+            <a href="#slide3" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide2" className="btn btn-circle">
+              ❯
+            </a>
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img src="https://source.unsplash.com/1200x400/?career,2" className="w-full object-cover" alt="Career Slide 2" />
+          <img
+            src="https://i.ibb.co/5W37ghf4/career-6.jpg"
+            className="w-full object-cover"
+            alt="Career Slide 2"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" className="btn btn-circle">❮</a>
-            <a href="#slide3" className="btn btn-circle">❯</a>
+            <a href="#slide1" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide3" className="btn btn-circle">
+              ❯
+            </a>
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <img src="https://source.unsplash.com/1200x400/?career,3" className="w-full object-cover" alt="Career Slide 3" />
+          <img
+            src="https://i.ibb.co/q3fzSdVr/career-7.png"
+            className="w-full object-cover"
+            alt="Career Slide 3"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" className="btn btn-circle">❮</a>
-            <a href="#slide1" className="btn btn-circle">❯</a>
+            <a href="#slide2" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide1" className="btn btn-circle">
+              ❯
+            </a>
           </div>
         </div>
       </div>
@@ -50,7 +74,9 @@ const Home = () => {
               className="w-full h-48 object-cover rounded"
             />
             <h3 className="text-xl font-semibold mt-3">{service.name}</h3>
-            <p className="text-sm text-gray-600">Category: {service.category}</p>
+            <p className="text-sm text-gray-600">
+              Category: {service.category}
+            </p>
             <p className="text-sm text-gray-600">Price: {service.price}</p>
             <p className="text-sm text-gray-600 mb-2">
               Counselor: {service.counselor}

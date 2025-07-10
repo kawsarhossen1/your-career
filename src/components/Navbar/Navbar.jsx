@@ -6,11 +6,14 @@ import auth from "../../firebase/firebase.config";
 
 const Navbar = () => {
   const [user, setUser] = useState(null);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
+      setLoading(false);
+
     });
     return () => unsubscribe();
   }, []);
@@ -19,8 +22,17 @@ const Navbar = () => {
     await signOut(auth);
     navigate("/");
   };
+
+  if (loading) {
+    return (
+      <div className="w-full py-6 text-center bg-blue-600 text-white">
+        <span className="loading loading-spinner text-white text-xl"></span>
+      </div>
+    );
+  }
+
   return (
-    <nav className="bg-blue-600 text-white px-6 py-4 flex justify-between items-center">
+    <nav className=" sticky top-0 z-50 bg-blue-600 text-white px-6 py-4 flex justify-between items-center shadow">
       <Link to="/" className="text-2xl font-bold">
         {" "}
         Your Career
@@ -40,11 +52,14 @@ const Navbar = () => {
         </NavLink>
         {user ? (
           <div className="flex items-center gap-3">
-            <div className="relative group">
-              <span className="absolute left-0 mt-1 px-2 py-1 bg-gray-800 text-sm rounded text-white hidden group-hover:block">
-                {user.displayName}
-              </span>
-            </div>
+            {user.photoURL && (
+              <img
+                src={user.photoURL}
+                alt="User"
+                className="w-8 h-8 rounded-full border"
+              />
+            )}
+            <span className="text-sm font-medium">{user.displayName}</span>
             <button
               onClick={handleLogout}
               className="bg-red-500 hover:bg-red-700 px-3 py-1 rounded"
