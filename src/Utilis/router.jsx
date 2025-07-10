@@ -7,6 +7,7 @@ import Register from "../components/Register/Register";
 import ServicesDetails from "../components/ServicesDetails/ServicesDetails";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import ForgotPassword from "../components/ForgotPassword/ForgotPassword";
+import PrivateRoute from "../Routes/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path:"/servicesDetails/:id",
-        element:<ServicesDetails></ServicesDetails>
+        element:(
+          <PrivateRoute>
+            <ServicesDetails></ServicesDetails>
+          </PrivateRoute>
+        )
       },
       {
         path:"*",

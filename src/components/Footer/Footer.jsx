@@ -39,7 +39,7 @@ const Footer = () => {
         {/* Contact */}
         <div>
           <h3 className="text-xl font-semibold mb-3">Contact Us</h3>
-          <p>Email: support@careercounseling.com</p>
+          <p>Email: support@yourcareer.com</p>
           <p>Phone: +880 1234 567890</p>
           <p>Address: Dhaka, Bangladesh</p>
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="text-center py-4 bg-blue-600 text-sm">
-        © {new Date().getFullYear()} Your Career. All rights reserved.
+        © {new Date().getFullYear()} Your Career. Design by KAWSAR.
       </div>
     </footer>
   );
