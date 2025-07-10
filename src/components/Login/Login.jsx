@@ -75,6 +75,13 @@ const Login = () => {
       >
         Login with Google
       </button>
+      <Link
+        to="/forgot-password"
+        state={{ email: data.email }}
+        className="text-blue-600 hover:underline text-sm"
+      >
+        Forgot Password?
+      </Link>
     </div>
   );
 };
