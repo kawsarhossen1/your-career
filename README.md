@@ -1,12 +1,42 @@
-# React + Vite
+# Your Career – Career Counseling Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 A modern single-page Career Counseling Web App built with **React**, **Firebase**, **React Router**, and **Tailwind CSS**. It helps users get personalized career advice, book services, and manage their profiles.
 
-Currently, two official plugins are available:
+### 🔗 Live Website
+👉 [Visit Website]([https://your-career.web.app](https://your-career-37d8c.web.app/))
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 Firebase Authentication with Email/Password + Google Login
+- 🧑‍💼 Protected Routes (Profile, Service Details)
+- 📝 User Profile with Update Feature (Name & Photo)
+- 💬 Service Feedback & Comment Section
+- 📱 Fully Responsive (Mobile, Tablet, Desktop)
+- 📦 JSON-based Service Data
+- 🖼️ Swiper Slider on Home Page
+- ✅ Toast Notifications for all interactions
+- ❌ 404 Not Found Page
+- 🔁 Forget Password with email autofill
+
+---
+
+### 🛠️ Tech Stack
+
+- **React**
+- **Firebase Auth**
+- **Tailwind CSS + DaisyUI**
+- **React Router DOM**
+- **Swiper.js**
+- **AOS Animation**
+- **React Toastify**
+
+---
+
+### 🔧 Installation & Setup
+
+```bash
+git clone https://github.com/your-username/your-career.git
+cd your-career
+npm install
